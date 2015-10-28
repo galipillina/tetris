@@ -1,16 +1,16 @@
 public class Plateau{
 
-  public boolean lignePleine(int ligne)
+	public boolean lignePleine(int ligne)
 	{
 		for(int j = 0;j < this.tableau[0].length;j = j+ 1){
 			if(tableau[ligne][j] == null){
-			return false;
+				return false;
 			}
 		return true;
 		}
 	}
 		
-	public int nbLignesPleines()´
+	public int nbLignesPleines()
 	{
 		int nbLignesPleines=0;
 		
@@ -21,19 +21,21 @@ public class Plateau{
 		}
 		return nbLignesPleines;
 	//pour calculer le score après	
+	
+	// Définition de j 
+	// Je pense qu'une incrémentation de la variable suffit quand une ligne est supprimée
 	}
 	
 	public void effacerLignePleine(int ligne){
 	     for(int j=0;j<this.tableau[0].length;j=j+1){
 	            tableau[ligne][j] == null;
+	            }
 	     for(int i=ligne; i>0; i--){
 	        for(int j=0;j<this.tableau[0];j=j+1){
 	              tableau[i][j] = tableau[i-1][j];
 	        }
 	     }
-	     }
-	 }  
-	
-	}
-	
-	}
+	     
+	     // this.nbLignesPleines = this.nbLignesPleines + 1;
+	 }
+}
