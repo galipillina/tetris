@@ -1,5 +1,17 @@
-public class Bloc{
-private String couleur;
 
-
+public class Bloc
+{
+	// private String couleur;
+	
+	private char caractere;
+	
+	public Bloc(char caractere)
+	{
+		this.caractere = caractere;
+	}
+	
+	public char getCaractere()
+	{
+		return this.caractere;
+	}
 }
