@@ -53,10 +53,24 @@ public class Piece
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
+	public void afficherPiece()
+	{
+		for (int i = 0; i < this.tableau.length; i = i + 1)
+		{
+			for (int j = 0; j < this.tableau[0].length; j = j + 1)
+			{
+				if (tableau[i][j] != null)
+				{
+					System.out.print(tableau[i][j].getCaractere());
+				}
+				
+				else 
+				{
+					System.out.print(" ");
+				}
+			}
+			
+			System.out.println();
+		}
+	}
 }
