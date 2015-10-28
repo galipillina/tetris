@@ -1,0 +1,22 @@
+
+public class Tetris
+{
+	public static void main(String[] args)
+	{
+		Bloc bloc = new Bloc('#');
+		
+		Bloc[][] tableauPiece = {{bloc, null, null, null},
+							     {bloc, bloc, null, null},
+						         {null, bloc, null, null},
+							     {null, null, null, null}};
+								 
+		Piece piece = new Piece(tableauPiece, 0);
+		
+		for(int i = 0; i < 4; i = i + 1)
+		{
+			piece.afficherPiece();
+		
+			piece.rotationPiece();
+		}
+	}
+}
